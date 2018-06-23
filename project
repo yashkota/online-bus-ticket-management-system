@@ -1,0 +1,343 @@
+#include<stdio.h>
+#include<conio.h>
+#include<windows.h>
+main()
+{
+	int a,b,c,d,e,f,g,h,i,j,k,fare,number_a;
+	printf(" \t \t ************************************** \t \t");
+	printf("\n \t \t  WELCOME TO ONLINE BUS TICKET SYSTEM \t \t  ");
+	printf("\n \t \t ************************************** \t \t");
+	printf("\nSeats of Our Buses Are Shown-\n");
+	printf("|01|  |02||03|\n");
+	printf("|04|  |05||06|\n");
+	printf("|07|  |08||09|\n");
+	printf("|10|  |11||12|\n");
+	printf("|13|  |14||15|\n");
+	printf("|16|  |17||18|\n");
+	printf("|19|  |20||21|\n");
+	printf("\n Chose The Bus From: \n");
+	printf(" 1.Ambala \n 2.Chandigarh \n 3.Delhi \n 4.Jalandhar \n 5.Ludhiana \n 6.Phagwara \n");
+scanf("%d",&a);
+printf("\n Chose the Bus to: \n");
+printf(" 1.Ambala \n 2.Chandigarh \n 3.Delhi \n 4.Jalandhar \n 5.Ludhiana \n 6.Phagwara \n");
+scanf("%d",&b);
+printf("\n");
+if(a==b)
+{
+	printf("ENTRY CANNOT BE DONE");
+}
+else
+{
+
+printf("Are you sure you want to take bus from %d to %d \n",a,b);
+printf("1.Yes \n");
+printf("2.No \n");
+scanf("%d",&c);
+if(c==1)
+ {
+	printf(" \n select the day you want to travel: \n");
+	printf("1.Today \n");
+	printf("2.Tommorow \n");
+	scanf("%d",&d);
+	if(d==1)
+	{
+	printf("Number of Buses available are 2 \n");
+	printf("1. Time-9 A.M. \n");
+	printf("2. Time-4 P.M. \n");
+	printf("Select the time according to your choice");
+	scanf("%d",&e);
+	if(e==1)
+	{
+		printf("Number of seats available:5 \n");
+		printf("\n enter the number of seats you want to book:");
+		scanf("%d",&g);
+		printf("%d",g);
+		system("cls");
+		printf("\t \t \t*************************************************************\n\n");
+		printf("\t \t \t \t \t ONLINE BUS TICKET SYSTEM \t \t \t \t \t \t \n \n");
+		printf("\t \t \t*************************************************************\n\n");
+		if(g<=5)
+		{
+		printf("proceed to book \n");
+		fare=500*g;
+		printf("TOTAL FARE IS %d \n",fare);
+		printf("ENTER YOUR DETAILS:\n");
+		typedef struct
+		{
+			char name[20];
+			char sex[2];
+			int age;
+			int mobile;
+		}info;
+		info passenger[5];
+		int m;
+		for(m=0;m<g;m++)
+		{
+			printf("NAME:");
+			scanf("%s",passenger[m].name);
+			printf("\n");
+			printf("SEX:");
+			scanf("%s",passenger[m].sex);
+			printf("\n");
+			printf("AGE:");
+			scanf("%d",&passenger[m].age);
+			printf("\n");
+			printf("MOBILE NUMBER:");
+			scanf("%d",&passenger[m].mobile);
+				}
+					printf("YOU HAVE ENTERED DETAILS OF %d NUMBER OF SEATS \n",g);
+					printf("PRESS 1 TO PROCEED FOR PAYMENT \n");
+				scanf("%d",&number_a);
+				if(number_a==1)
+				{
+					system("cls");
+					printf("Fare Details:\n");
+					printf("Total- %d \n",fare);
+					printf("HAPPY JOURNEY \n");
+				}
+		}
+		else
+		{
+			printf("Seats are not available you cannot book \n");
+			printf("Please chose another bus or proceed for tommorow \n");
+		}
+	}
+	if(e==2)
+	{
+		printf("Number of seats available:3 \n");
+			printf("\n enter the number of seats you want to book:");
+			scanf("%d",&h);
+			system("cls");
+		printf("\t \t \t*************************************************************\n\n");
+		printf("\t \t \t \t \t ONLINE BUS TICKET SYSTEM \t \t \t \t \t \t \n \n");
+		printf("\t \t \t*************************************************************\n\n");
+			if(h<=3)
+			{
+				printf("proceed to book \n");
+				fare=600*h;
+				printf("TOTAL FARE IS %d \n",fare);
+				printf("ENTER YOUR DETAILS: \n");
+			typedef struct
+		{
+			char name[20];
+			char sex[2];
+			int age;
+			int mobile;
+		}info;
+		info passenger[3];
+		int n;
+		for(n=0;n<h;n++)
+		{
+			printf("NAME:");
+			scanf("%s",passenger[n].name);
+			printf("\n");
+			printf("SEX:");
+			scanf("%s",passenger[n].sex);
+			printf("\n");
+			printf("AGE:");
+			scanf("%d",&passenger[n].age);
+			printf("\n");
+			printf("MOBILE NUMBER:");
+			scanf("%d",&passenger[n].mobile);
+			}
+					printf("YOU HAVE ENTERED DETAILS OF %d NUMBER OF SEATS \n",h);
+					printf("PRESS 1 TO PROCEED FOR PAYMENT \n");
+						scanf("%d",&number_a);
+				if(number_a==1)
+				{
+					system("cls");
+					printf("Fare Details:\n");
+					printf("Total- %d \n",fare);
+					printf("HAPPY JOURNEY");
+				}
+			}
+			else
+				{
+			printf("Seats are not available you cannot book \n");
+			printf("Please chose another bus or proceed for tommorow \n");
+		}
+			
+	}
+}
+	if(d==2)
+	{
+		printf("Number of buses available are 3 \n");
+		printf("1. Time-9 A.M. \n");
+		printf("2. Time-12 P.M \n");
+		printf("3. Time-4 P.M. \n");
+		scanf("%d",&f);
+		if(f==1)
+		{
+			printf("Number of seats are available:7");
+				printf("\n enter the number of seats you want to book:");
+				scanf("%d",&i);
+				system("cls");
+		printf("\t \t \t*************************************************************\n\n");
+		printf("\t \t \t \t \t ONLINE BUS TICKET SYSTEM \t \t \t \t \t \t \n \n");
+		printf("\t \t \t*************************************************************\n\n");
+				if(i<=7)
+				{
+				printf("proceed to book\n");
+				fare=500*i;
+				printf("TOTAL FARE IS %d \n",fare);
+				printf("ENTER YOUR DETAILS \n");
+			typedef struct
+		{
+			char name[20];
+			char sex[2];
+			int age;
+			int mobile;
+		}info;
+		info passenger[7];
+		int o;
+		for(o=0;o<i;o++)
+		{
+			printf("NAME:");
+			scanf("%s",passenger[o].name);
+			printf("\n");
+			printf("SEX:");
+			scanf("%s",passenger[o].sex);
+			printf("\n");
+			printf("AGE:");
+			scanf("%d",&passenger[o].age);
+			printf("\n");
+			printf("MOBILE NUMBER:");
+			scanf("%d",&passenger[o].mobile);
+			}
+				printf("YOU HAVE ENTERED DETAILS OF %d NUMBER OF SEATS \n",o);
+					printf("PRESS 1 TO PROCEED FOR PAYMENT \n");
+					scanf("%d",&number_a);
+				if(number_a==1)
+				{
+					system("cls");
+					printf("Fare Details:\n");
+					printf("Total- %d \n",fare);
+			printf("HAPPY JOURNEY");
+				}
+			    }
+			else
+		{
+					
+			printf("Seats are not available you cannot book \n");
+			printf("Please check on some another day or chose another bus \n");
+		}
+	}
+		if(f==2)
+		{
+			printf("Number of seats are available:8");
+				printf("\n enter the number of seats you want to book:");
+				scanf("%d",&j);
+				system("cls");
+		printf("\t \t \t*************************************************************\n\n");
+		printf("\t \t \t \t \t ONLINE BUS TICKET SYSTEM \t \t \t \t \t \t \n \n");
+		printf("\t \t \t*************************************************************\n\n");
+				if(j<=8)
+            {
+				printf("proceed to book \n");
+				fare=600*j;
+				printf("TOTAL FARE IS %d \n",fare);
+				printf("ENTER YOUR DETAILS \n");
+				typedef struct
+		{
+			char name[20];
+			char sex[2];
+			int age;
+			int mobile;
+		}info;
+		info passenger[8];
+		int p;
+		for(p=0;p<j;p++)
+		{
+			printf("NAME:");
+			scanf("%s",passenger[p].name);
+			printf("\n");
+			printf("SEX:");
+			scanf("%s",passenger[p].sex);
+			printf("\n");
+			printf("AGE:");
+			scanf("%d",&passenger[p].age);
+			printf("\n");
+			printf("MOBILE NUMBER:");
+			scanf("%d",&passenger[p].mobile);
+		}
+		printf("YOU HAVE ENTERED DETAILS OF %d NUMBER OF SEATS \n",p);
+					printf("PRESS 1 TO PROCEED FOR PAYMENT \n");
+					scanf("%d",&number_a);
+				if(number_a==1)
+				{
+					system("cls");
+					printf("Fare Details:\n");
+					printf("Total- %d \n",fare);
+					printf("HAPPY JOURNEY \n");
+				}
+			}
+			else
+				{
+			printf("Seats are not available you cannot book \n");
+			printf("Please check on some another day or chose another bus\n");				
+		}
+	}
+	if(f==3)
+	{
+		printf("Number of seats are available:9");
+			printf("\n enter the number of seats you want to book:");
+			scanf("%d",&k);
+			system("cls");
+		printf("\t \t \t*************************************************************\n\n");
+		printf("\t \t \t \t \t ONLINE BUS TICKET SYSTEM \t \t \t \t \t \t \n \n");
+		printf("\t \t \t*************************************************************\n\n");
+			if(k<=9)
+{
+				printf("proceed to book");
+				fare=700*k;
+				printf("TOTAL FARE IS %d \n",fare);
+				printf("ENTER YOUR DETAILS \n");
+				typedef struct
+		{
+			char name[20];
+			char sex[2];
+			int age;
+			int mobile;
+		}info;
+		info passenger[9];
+		int q;
+		for(q=0;q<k;q++)
+		{
+			printf("NAME:");
+			scanf("%s",passenger[q].name);
+			printf("\n");
+			printf("SEX:");
+			scanf("%s",passenger[q].sex);
+			printf("\n");
+			printf("AGE:");
+			scanf("%d",&passenger[q].age);
+			printf("\n");
+			printf("MOBILE NUMBER:");
+			scanf("%d",&passenger[q].mobile);
+		}
+		printf("YOU HAVE ENTERED DETAILS OF %d NUMBER OF SEATS \n",q);
+					printf("PRESS 1 TO PROCEED FOR PAYMENT \n");
+					scanf("%d",&number_a);
+				if(number_a==1)
+				{
+					system("cls");
+					printf("Fare Details:\n");
+					printf("Total- %d \n",fare);
+				printf("HAPPY JOURNEY");
+				}
+			}
+			else
+				{
+			printf("Seats are not available you cannot book \n");
+			printf("Please check on some another day or chose another bus\n");			
+	}
+	}}
+    }
+    else
+	printf("SORRY TRY AGAIN");
+}}
+
+
+
+
+
